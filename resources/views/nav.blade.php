@@ -8,15 +8,15 @@
       <ul class="navbar-nav mr-auto">
   
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('#') }}">Search</a>
+          <a class="nav-link" href="{{ url('search') }}">Search</a>
         </li>
   
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('#') }}">Buy</a>
+          <a class="nav-link" href="{{ url('buy') }}">Buy</a>
         </li>
   
       <li class="nav-item">
-          <a class="nav-link" href="{{ url('#') }}">Clear</a>
+          <a class="nav-link" href="{{ url('clear') }}">Clear</a>
         </li>
               
         
