@@ -31,7 +31,7 @@
                     >
                 </div>
     
-                <input type="submit" class="btn btn-success">
+                <input type="submit" value= "Search" class="btn btn-success">
     
             </form>
             
