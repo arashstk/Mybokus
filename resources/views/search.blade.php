@@ -55,7 +55,12 @@
                                 <td>{{ $book->title }}</td>
                                 <td>{{ $book->author }}</td>
                                 <td>{{ $book->price }}</td>
-                                <td> --- </td>
+                                <td>
+                                    <a href="{{ url('remove/' . $book->id) }}" 
+                                        class="btn btn-danger btn-sm @if($book->book_count() == 0) disabled @endif">-</a>
+                                    <span style="margin: 0 10px 0 10px;">{{ $book->book_count() }}</span>
+                                    <a href="{{ url('add/' . $book->id) }}" class="btn btn-success btn-sm">+</a>
+                                </td>
                             </tr>
                         @endforeach
 
@@ -64,5 +69,10 @@
             @endif
         </div>
     </div>
+
+</div>
+    
+<div class="card-header"><a class="nav-link" href="{{ url('/') }}">Main Menue</a></div>
+</div>
 
 @endsection

@@ -18,3 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('search', [\App\Http\Controllers\SearchController::class, 'index']);
+
+Route::get('add/{id}' , [\App\Http\Controllers\SearchController::class, 'add']);
+
+Route::get('remove/{id}' , [\App\Http\Controllers\SearchController::class, 'remove']);
+
+Route::get('buy', [\App\Http\Controllers\BuyController::class, 'buy']);
+Route::get('clear', [\App\Http\Controllers\BuyController::class, 'clear']);
